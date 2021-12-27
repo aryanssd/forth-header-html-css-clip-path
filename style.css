@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.header{
+    background-image: linear-gradient(to top, rgb(255, 69, 0)10%,  rgb(255, 165, 0) 50%);
+    height: 90vh;
+    display: flex;
+}
+
+.right{
+    background-color: yellow;
+    width: 50%;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background-image: url("pics/1332277.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.left{
+    background-color: #000000;
+    width: 50%;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    display: flex;
+    align-items: center;
+}
+
+.text-box{
+    width: 70%;
+    height: 60vh;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title{
+    font-size: 42px;
+    color: #ffffff;
+    animation: make-big 1s ease-out;
+}
+
+.sub-title{
+    font-size: 52px;
+    color: orange;
+    animation: make-big 1.8s ease-out;
+}
+
+.txt{
+    font-size: 18px;
+    color: #ffffff;
+    animation: make-big 2.5s ease-out;
+}
+
+.colored-txt{
+    color: orange;
+}
+
+.colored-text{
+    color: #ffffff;
+}
+
+
+@keyframes make-big{
+    0%{
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
